@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsApp
 {
-    public partial class Form1 : Form
+    public partial class frmINEQ : Form
     {
-        public Form1()
+        public frmINEQ()
         {
             InitializeComponent();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
