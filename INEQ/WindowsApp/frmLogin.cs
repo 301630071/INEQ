@@ -21,5 +21,20 @@ namespace WindowsApp
         {
             this.Close();
         }
+
+        private void btnInicioS_Click(object sender, EventArgs e)
+        {
+            string mensaje = BusinessLogicLayer.UserBLL.iniciarSesion(txtUsuario.Text, txtPassword.Text);
+
+            if (string.IsNullOrEmpty(mensaje))
+            {
+                MessageBox.Show("Bienvenido");
+            }
+            else
+            {
+                MessageBox.Show(mensaje);
+            }
+        }
     }
 }
+
