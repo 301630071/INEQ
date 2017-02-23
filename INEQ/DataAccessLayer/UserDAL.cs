@@ -14,7 +14,7 @@ namespace DataAccessLayer
     public class UserDAL
     {
         private static IneqContext db = new IneqContext();
-        public static string CONNECTIONSTRING = "server=localhost;uid=root;pwd=melapelas5225.;database=Ineq";
+        public static string CONNECTIONSTRING = "server=localhost;uid=root;pwd=melapelas5225.;database=Idea";
 
         public static bool iniciarSesion(string us, string pwd)
         {
